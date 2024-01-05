@@ -1,0 +1,19 @@
+{
+  "background_color": "#060606",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "src": "favicon-192-v1.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "favicon-512-v1.png",
+      "type": "image/png"
+    }
+  ],
+  "name": "yanke's last will",
+  "short_name": "yanke's last will",
+  "theme_color": "#060606"
+}
