@@ -26,27 +26,22 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
-      - name: setup-pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-
       - name: setup node
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: "pnpm"
+          cache: "npm"
 
       - name: install dependencies
-        run: pnpm install
+        run: npm ci
 
       - name: update data.json
-        run: pnpm run update-data
+        run: npm run update-data
         env:
           SECRET_KEY: ${{secrets.SECRET_KEY}}
 
       - name: build
-        run: pnpm run build
+        run: npm run build
         env:
           NITRO_PRESET: github_pages
 

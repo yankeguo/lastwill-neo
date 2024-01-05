@@ -16,7 +16,7 @@ import data from "~/assets/data.json";
       <p>I've built an automatic disclosure system for my last will</p>
       <p>
         If I failed to renew the beacon file for
-        <b>21 days</b>, the decryption key of my last will will be disclosed
+        <em>21 days</em>, the decryption key of my last will will be disclosed
         automatically
       </p>
       <p>
